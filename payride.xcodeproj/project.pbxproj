@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5830743A1FB3E77300E5F4AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 583074391FB3E77300E5F4AD /* AppDelegate.m */; };
+		5830743D1FB3E77300E5F4AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830743C1FB3E77300E5F4AD /* ViewController.m */; };
+		583074401FB3E77300E5F4AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5830743E1FB3E77300E5F4AD /* Main.storyboard */; };
+		583074431FB3E77300E5F4AD /* payride.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 583074411FB3E77300E5F4AD /* payride.xcdatamodeld */; };
+		583074451FB3E77300E5F4AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583074441FB3E77300E5F4AD /* Assets.xcassets */; };
+		583074481FB3E77300E5F4AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583074461FB3E77300E5F4AD /* LaunchScreen.storyboard */; };
+		5830744B1FB3E77300E5F4AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830744A1FB3E77300E5F4AD /* main.m */; };
+		583074551FB3E77300E5F4AD /* payrideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 583074541FB3E77300E5F4AD /* payrideTests.m */; };
+		583074601FB3E77300E5F4AD /* payrideUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830745F1FB3E77300E5F4AD /* payrideUITests.m */; };
+		583074711FB3E86200E5F4AD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 583074701FB3E80600E5F4AD /* libsqlite3.0.tbd */; };
+		583074721FB3E86500E5F4AD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5830746F1FB3E80600E5F4AD /* libsqlite3.tbd */; };
+		583074731FB3E86700E5F4AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5830746E1FB3E79E00E5F4AD /* CoreGraphics.framework */; };
+		583074761FB3EB1E00E5F4AD /* DriverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 583074751FB3EB1E00E5F4AD /* DriverVC.m */; };
+		583074791FB3EB2F00E5F4AD /* PassengerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 583074781FB3EB2F00E5F4AD /* PassengerVC.m */; };
+		5830747B1FB4024F00E5F4AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5830747A1FB4024900E5F4AD /* UIKit.framework */; };
+		5830747D1FB4026300E5F4AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5830747C1FB4025700E5F4AD /* Foundation.framework */; };
+		585638241FDF206A0013C9AF /* Thankyou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 585638231FDF206A0013C9AF /* Thankyou.jpg */; };
+		5883E6601FE0B28000531FAC /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5883E65F1FE0B28000531FAC /* car.jpg */; };
+		5883E6641FE0C9D500531FAC /* mapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5883E6631FE0C9D500531FAC /* mapsViewController.m */; };
+		58BC1D8B1FDCEF1D00CA9A3D /* PThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC1D8A1FDCEF1D00CA9A3D /* PThankYouViewController.m */; };
+		58EC5B011FDDEE360082C477 /* IncomingReqTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EC5B001FDDEE360082C477 /* IncomingReqTableViewController.m */; };
+		6F0A2E411FD906F500DCDE83 /* PassengertableDynamoDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0A2E401FD906F500DCDE83 /* PassengertableDynamoDB.m */; };
+		6F132F421FB568920055CF27 /* PassengerLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F132F411FB568920055CF27 /* PassengerLoginVC.m */; };
+		6FCB5DBA1FCF30C800801F2F /* AWSAuthUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9B1FCF30BE00801F2F /* AWSAuthUI.framework */; };
+		6FCB5DBB1FCF30C800801F2F /* AWSAuthUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9B1FCF30BE00801F2F /* AWSAuthUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DBC1FCF30C800801F2F /* AWSPinpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9C1FCF30BF00801F2F /* AWSPinpoint.framework */; };
+		6FCB5DBD1FCF30C800801F2F /* AWSPinpoint.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9C1FCF30BF00801F2F /* AWSPinpoint.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DBE1FCF30C800801F2F /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9D1FCF30BF00801F2F /* AWSCognitoIdentityProvider.framework */; };
+		6FCB5DBF1FCF30C800801F2F /* AWSCognitoIdentityProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9D1FCF30BF00801F2F /* AWSCognitoIdentityProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DC01FCF30C800801F2F /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9E1FCF30BF00801F2F /* AWSSES.framework */; };
+		6FCB5DC11FCF30C800801F2F /* AWSSES.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9E1FCF30BF00801F2F /* AWSSES.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DC21FCF30C800801F2F /* AWSIoT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9F1FCF30C000801F2F /* AWSIoT.framework */; };
+		6FCB5DC31FCF30C800801F2F /* AWSIoT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5D9F1FCF30C000801F2F /* AWSIoT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DC41FCF30C800801F2F /* AWSKMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA01FCF30C000801F2F /* AWSKMS.framework */; };
+		6FCB5DC51FCF30C800801F2F /* AWSKMS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA01FCF30C000801F2F /* AWSKMS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DC61FCF30C800801F2F /* AWSUserPoolsSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA11FCF30C000801F2F /* AWSUserPoolsSignIn.framework */; };
+		6FCB5DC71FCF30C800801F2F /* AWSUserPoolsSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA11FCF30C000801F2F /* AWSUserPoolsSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DC81FCF30C800801F2F /* AWSLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA21FCF30C000801F2F /* AWSLogs.framework */; };
+		6FCB5DC91FCF30C800801F2F /* AWSLogs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA21FCF30C000801F2F /* AWSLogs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DCA1FCF30C800801F2F /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA31FCF30C100801F2F /* AWSDynamoDB.framework */; };
+		6FCB5DCB1FCF30C800801F2F /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA31FCF30C100801F2F /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DCC1FCF30C800801F2F /* AWSPolly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA41FCF30C100801F2F /* AWSPolly.framework */; };
+		6FCB5DCD1FCF30C800801F2F /* AWSPolly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA41FCF30C100801F2F /* AWSPolly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DCE1FCF30C800801F2F /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA51FCF30C100801F2F /* AWSCognito.framework */; };
+		6FCB5DCF1FCF30C800801F2F /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA51FCF30C100801F2F /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DD01FCF30C800801F2F /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA61FCF30C100801F2F /* AWSElasticLoadBalancing.framework */; };
+		6FCB5DD11FCF30C800801F2F /* AWSElasticLoadBalancing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA61FCF30C100801F2F /* AWSElasticLoadBalancing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DD21FCF30C800801F2F /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA71FCF30C100801F2F /* AWSCloudWatch.framework */; };
+		6FCB5DD31FCF30C800801F2F /* AWSCloudWatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA71FCF30C100801F2F /* AWSCloudWatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DD41FCF30C800801F2F /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA81FCF30C200801F2F /* AWSS3.framework */; };
+		6FCB5DD51FCF30C800801F2F /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA81FCF30C200801F2F /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DD61FCF30C800801F2F /* AWSRekognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA91FCF30C200801F2F /* AWSRekognition.framework */; };
+		6FCB5DD71FCF30C800801F2F /* AWSRekognition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DA91FCF30C200801F2F /* AWSRekognition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DD81FCF30C800801F2F /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAA1FCF30C200801F2F /* AWSLambda.framework */; };
+		6FCB5DD91FCF30C800801F2F /* AWSLambda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAA1FCF30C200801F2F /* AWSLambda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DDA1FCF30C800801F2F /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAB1FCF30C300801F2F /* AWSSQS.framework */; };
+		6FCB5DDB1FCF30C800801F2F /* AWSSQS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAB1FCF30C300801F2F /* AWSSQS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DDC1FCF30C800801F2F /* AWSAuthCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAC1FCF30C300801F2F /* AWSAuthCore.framework */; };
+		6FCB5DDD1FCF30C800801F2F /* AWSAuthCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAC1FCF30C300801F2F /* AWSAuthCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DDE1FCF30C800801F2F /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAD1FCF30C400801F2F /* AWSCore.framework */; };
+		6FCB5DDF1FCF30C800801F2F /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAD1FCF30C400801F2F /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DE01FCF30C800801F2F /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAE1FCF30C400801F2F /* AWSKinesis.framework */; };
+		6FCB5DE11FCF30C800801F2F /* AWSKinesis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAE1FCF30C400801F2F /* AWSKinesis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DE21FCF30C800801F2F /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAF1FCF30C400801F2F /* AWSAutoScaling.framework */; };
+		6FCB5DE31FCF30C800801F2F /* AWSAutoScaling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DAF1FCF30C400801F2F /* AWSAutoScaling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DE41FCF30C800801F2F /* AWSCognitoAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB01FCF30C500801F2F /* AWSCognitoAuth.framework */; };
+		6FCB5DE51FCF30C800801F2F /* AWSCognitoAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB01FCF30C500801F2F /* AWSCognitoAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DE61FCF30C800801F2F /* AWSGoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB11FCF30C500801F2F /* AWSGoogleSignIn.framework */; };
+		6FCB5DE71FCF30C800801F2F /* AWSGoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB11FCF30C500801F2F /* AWSGoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DE81FCF30C800801F2F /* AWSLex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB21FCF30C500801F2F /* AWSLex.framework */; };
+		6FCB5DE91FCF30C800801F2F /* AWSLex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB21FCF30C500801F2F /* AWSLex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DEA1FCF30C800801F2F /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB31FCF30C600801F2F /* AWSMachineLearning.framework */; };
+		6FCB5DEB1FCF30C800801F2F /* AWSMachineLearning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB31FCF30C600801F2F /* AWSMachineLearning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DEC1FCF30C800801F2F /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB41FCF30C600801F2F /* AWSMobileAnalytics.framework */; };
+		6FCB5DED1FCF30C800801F2F /* AWSMobileAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB41FCF30C600801F2F /* AWSMobileAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DEE1FCF30C800801F2F /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB51FCF30C600801F2F /* AWSSimpleDB.framework */; };
+		6FCB5DEF1FCF30C800801F2F /* AWSSimpleDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB51FCF30C600801F2F /* AWSSimpleDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DF01FCF30C800801F2F /* AWSFacebookSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB61FCF30C600801F2F /* AWSFacebookSignIn.framework */; };
+		6FCB5DF11FCF30C800801F2F /* AWSFacebookSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB61FCF30C600801F2F /* AWSFacebookSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DF21FCF30C800801F2F /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB71FCF30C600801F2F /* AWSSNS.framework */; };
+		6FCB5DF31FCF30C800801F2F /* AWSSNS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB71FCF30C600801F2F /* AWSSNS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DF41FCF30C800801F2F /* AWSEC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB81FCF30C700801F2F /* AWSEC2.framework */; };
+		6FCB5DF51FCF30C800801F2F /* AWSEC2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB81FCF30C700801F2F /* AWSEC2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DF61FCF30C800801F2F /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB91FCF30C700801F2F /* AWSAPIGateway.framework */; };
+		6FCB5DF71FCF30C800801F2F /* AWSAPIGateway.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB5DB91FCF30C700801F2F /* AWSAPIGateway.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FCB5DFC1FCF31AB00801F2F /* DrivertableDynamoDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB5DFB1FCF31AB00801F2F /* DrivertableDynamoDB.m */; };
+		6FF50D2E1FB7CD6200635264 /* ViewDrivers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF50D2D1FB7CD6200635264 /* ViewDrivers.m */; };
+		6FF50D311FB7CDA500635264 /* PassengerWelcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF50D301FB7CDA500635264 /* PassengerWelcome.m */; };
+		6FF50D351FB7D5C700635264 /* icons8-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF50D331FB7D5C700635264 /* icons8-car.png */; };
+		6FF50D361FB7D5C700635264 /* icons8-customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF50D341FB7D5C700635264 /* icons8-customer.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		583074511FB3E77300E5F4AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5830742D1FB3E77300E5F4AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 583074341FB3E77300E5F4AD;
+			remoteInfo = payride;
+		};
+		5830745C1FB3E77300E5F4AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5830742D1FB3E77300E5F4AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 583074341FB3E77300E5F4AD;
+			remoteInfo = payride;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FCB5DF81FCF30C800801F2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6FCB5DE91FCF30C800801F2F /* AWSLex.framework in Embed Frameworks */,
+				6FCB5DBB1FCF30C800801F2F /* AWSAuthUI.framework in Embed Frameworks */,
+				6FCB5DD71FCF30C800801F2F /* AWSRekognition.framework in Embed Frameworks */,
+				6FCB5DBF1FCF30C800801F2F /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
+				6FCB5DC11FCF30C800801F2F /* AWSSES.framework in Embed Frameworks */,
+				6FCB5DCD1FCF30C800801F2F /* AWSPolly.framework in Embed Frameworks */,
+				6FCB5DD11FCF30C800801F2F /* AWSElasticLoadBalancing.framework in Embed Frameworks */,
+				6FCB5DC71FCF30C800801F2F /* AWSUserPoolsSignIn.framework in Embed Frameworks */,
+				6FCB5DE71FCF30C800801F2F /* AWSGoogleSignIn.framework in Embed Frameworks */,
+				6FCB5DCB1FCF30C800801F2F /* AWSDynamoDB.framework in Embed Frameworks */,
+				6FCB5DE51FCF30C800801F2F /* AWSCognitoAuth.framework in Embed Frameworks */,
+				6FCB5DF51FCF30C800801F2F /* AWSEC2.framework in Embed Frameworks */,
+				6FCB5DD31FCF30C800801F2F /* AWSCloudWatch.framework in Embed Frameworks */,
+				6FCB5DE31FCF30C800801F2F /* AWSAutoScaling.framework in Embed Frameworks */,
+				6FCB5DDD1FCF30C800801F2F /* AWSAuthCore.framework in Embed Frameworks */,
+				6FCB5DF31FCF30C800801F2F /* AWSSNS.framework in Embed Frameworks */,
+				6FCB5DDF1FCF30C800801F2F /* AWSCore.framework in Embed Frameworks */,
+				6FCB5DED1FCF30C800801F2F /* AWSMobileAnalytics.framework in Embed Frameworks */,
+				6FCB5DCF1FCF30C800801F2F /* AWSCognito.framework in Embed Frameworks */,
+				6FCB5DC31FCF30C800801F2F /* AWSIoT.framework in Embed Frameworks */,
+				6FCB5DE11FCF30C800801F2F /* AWSKinesis.framework in Embed Frameworks */,
+				6FCB5DD91FCF30C800801F2F /* AWSLambda.framework in Embed Frameworks */,
+				6FCB5DF71FCF30C800801F2F /* AWSAPIGateway.framework in Embed Frameworks */,
+				6FCB5DF11FCF30C800801F2F /* AWSFacebookSignIn.framework in Embed Frameworks */,
+				6FCB5DD51FCF30C800801F2F /* AWSS3.framework in Embed Frameworks */,
+				6FCB5DC91FCF30C800801F2F /* AWSLogs.framework in Embed Frameworks */,
+				6FCB5DC51FCF30C800801F2F /* AWSKMS.framework in Embed Frameworks */,
+				6FCB5DBD1FCF30C800801F2F /* AWSPinpoint.framework in Embed Frameworks */,
+				6FCB5DEB1FCF30C800801F2F /* AWSMachineLearning.framework in Embed Frameworks */,
+				6FCB5DEF1FCF30C800801F2F /* AWSSimpleDB.framework in Embed Frameworks */,
+				6FCB5DDB1FCF30C800801F2F /* AWSSQS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		583074351FB3E77300E5F4AD /* payride.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = payride.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		583074381FB3E77300E5F4AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		583074391FB3E77300E5F4AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5830743B1FB3E77300E5F4AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5830743C1FB3E77300E5F4AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5830743F1FB3E77300E5F4AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		583074421FB3E77300E5F4AD /* payride.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = payride.xcdatamodel; sourceTree = "<group>"; };
+		583074441FB3E77300E5F4AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		583074471FB3E77300E5F4AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		583074491FB3E77300E5F4AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5830744A1FB3E77300E5F4AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		583074501FB3E77300E5F4AD /* payrideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = payrideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		583074541FB3E77300E5F4AD /* payrideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = payrideTests.m; sourceTree = "<group>"; };
+		583074561FB3E77300E5F4AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5830745B1FB3E77300E5F4AD /* payrideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = payrideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5830745F1FB3E77300E5F4AD /* payrideUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = payrideUITests.m; sourceTree = "<group>"; };
+		583074611FB3E77300E5F4AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5830746E1FB3E79E00E5F4AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5830746F1FB3E80600E5F4AD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		583074701FB3E80600E5F4AD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		583074741FB3EB1E00E5F4AD /* DriverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriverVC.h; sourceTree = "<group>"; };
+		583074751FB3EB1E00E5F4AD /* DriverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriverVC.m; sourceTree = "<group>"; };
+		583074771FB3EB2F00E5F4AD /* PassengerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassengerVC.h; sourceTree = "<group>"; };
+		583074781FB3EB2F00E5F4AD /* PassengerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassengerVC.m; sourceTree = "<group>"; };
+		5830747A1FB4024900E5F4AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5830747C1FB4025700E5F4AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		585638231FDF206A0013C9AF /* Thankyou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thankyou.jpg; sourceTree = "<group>"; };
+		5883E65F1FE0B28000531FAC /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		5883E6611FE0C63A00531FAC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5883E6621FE0C9D500531FAC /* mapsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapsViewController.h; sourceTree = "<group>"; };
+		5883E6631FE0C9D500531FAC /* mapsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapsViewController.m; sourceTree = "<group>"; };
+		58BC1D891FDCEF1D00CA9A3D /* PThankYouViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PThankYouViewController.h; sourceTree = "<group>"; };
+		58BC1D8A1FDCEF1D00CA9A3D /* PThankYouViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PThankYouViewController.m; sourceTree = "<group>"; };
+		58EC5AFF1FDDEE360082C477 /* IncomingReqTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncomingReqTableViewController.h; sourceTree = "<group>"; };
+		58EC5B001FDDEE360082C477 /* IncomingReqTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IncomingReqTableViewController.m; sourceTree = "<group>"; };
+		6F0A2E3F1FD906F500DCDE83 /* PassengertableDynamoDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassengertableDynamoDB.h; sourceTree = "<group>"; };
+		6F0A2E401FD906F500DCDE83 /* PassengertableDynamoDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassengertableDynamoDB.m; sourceTree = "<group>"; };
+		6F132F401FB568920055CF27 /* PassengerLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassengerLoginVC.h; sourceTree = "<group>"; };
+		6F132F411FB568920055CF27 /* PassengerLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassengerLoginVC.m; sourceTree = "<group>"; };
+		6FCB5D9B1FCF30BE00801F2F /* AWSAuthUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAuthUI.framework; sourceTree = "<group>"; };
+		6FCB5D9C1FCF30BF00801F2F /* AWSPinpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSPinpoint.framework; sourceTree = "<group>"; };
+		6FCB5D9D1FCF30BF00801F2F /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
+		6FCB5D9E1FCF30BF00801F2F /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSES.framework; sourceTree = "<group>"; };
+		6FCB5D9F1FCF30C000801F2F /* AWSIoT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSIoT.framework; sourceTree = "<group>"; };
+		6FCB5DA01FCF30C000801F2F /* AWSKMS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSKMS.framework; sourceTree = "<group>"; };
+		6FCB5DA11FCF30C000801F2F /* AWSUserPoolsSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSUserPoolsSignIn.framework; sourceTree = "<group>"; };
+		6FCB5DA21FCF30C000801F2F /* AWSLogs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLogs.framework; sourceTree = "<group>"; };
+		6FCB5DA31FCF30C100801F2F /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = "<group>"; };
+		6FCB5DA41FCF30C100801F2F /* AWSPolly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSPolly.framework; sourceTree = "<group>"; };
+		6FCB5DA51FCF30C100801F2F /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		6FCB5DA61FCF30C100801F2F /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSElasticLoadBalancing.framework; sourceTree = "<group>"; };
+		6FCB5DA71FCF30C100801F2F /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCloudWatch.framework; sourceTree = "<group>"; };
+		6FCB5DA81FCF30C200801F2F /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		6FCB5DA91FCF30C200801F2F /* AWSRekognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRekognition.framework; sourceTree = "<group>"; };
+		6FCB5DAA1FCF30C200801F2F /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLambda.framework; sourceTree = "<group>"; };
+		6FCB5DAB1FCF30C300801F2F /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSQS.framework; sourceTree = "<group>"; };
+		6FCB5DAC1FCF30C300801F2F /* AWSAuthCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAuthCore.framework; sourceTree = "<group>"; };
+		6FCB5DAD1FCF30C400801F2F /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		6FCB5DAE1FCF30C400801F2F /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSKinesis.framework; sourceTree = "<group>"; };
+		6FCB5DAF1FCF30C400801F2F /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAutoScaling.framework; sourceTree = "<group>"; };
+		6FCB5DB01FCF30C500801F2F /* AWSCognitoAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognitoAuth.framework; sourceTree = "<group>"; };
+		6FCB5DB11FCF30C500801F2F /* AWSGoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSGoogleSignIn.framework; sourceTree = "<group>"; };
+		6FCB5DB21FCF30C500801F2F /* AWSLex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLex.framework; sourceTree = "<group>"; };
+		6FCB5DB31FCF30C600801F2F /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMachineLearning.framework; sourceTree = "<group>"; };
+		6FCB5DB41FCF30C600801F2F /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileAnalytics.framework; sourceTree = "<group>"; };
+		6FCB5DB51FCF30C600801F2F /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSimpleDB.framework; sourceTree = "<group>"; };
+		6FCB5DB61FCF30C600801F2F /* AWSFacebookSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSFacebookSignIn.framework; sourceTree = "<group>"; };
+		6FCB5DB71FCF30C600801F2F /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
+		6FCB5DB81FCF30C700801F2F /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSEC2.framework; sourceTree = "<group>"; };
+		6FCB5DB91FCF30C700801F2F /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAPIGateway.framework; sourceTree = "<group>"; };
+		6FCB5DFA1FCF31AB00801F2F /* DrivertableDynamoDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrivertableDynamoDB.h; sourceTree = "<group>"; };
+		6FCB5DFB1FCF31AB00801F2F /* DrivertableDynamoDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrivertableDynamoDB.m; sourceTree = "<group>"; };
+		6FF50D2C1FB7CD6200635264 /* ViewDrivers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewDrivers.h; sourceTree = "<group>"; };
+		6FF50D2D1FB7CD6200635264 /* ViewDrivers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewDrivers.m; sourceTree = "<group>"; };
+		6FF50D2F1FB7CDA500635264 /* PassengerWelcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassengerWelcome.h; sourceTree = "<group>"; };
+		6FF50D301FB7CDA500635264 /* PassengerWelcome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassengerWelcome.m; sourceTree = "<group>"; };
+		6FF50D331FB7D5C700635264 /* icons8-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-car.png"; sourceTree = "<group>"; };
+		6FF50D341FB7D5C700635264 /* icons8-customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-customer.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		583074321FB3E77300E5F4AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FCB5DDA1FCF30C800801F2F /* AWSSQS.framework in Frameworks */,
+				6FCB5DD21FCF30C800801F2F /* AWSCloudWatch.framework in Frameworks */,
+				6FCB5DE81FCF30C800801F2F /* AWSLex.framework in Frameworks */,
+				5830747B1FB4024F00E5F4AD /* UIKit.framework in Frameworks */,
+				6FCB5DBC1FCF30C800801F2F /* AWSPinpoint.framework in Frameworks */,
+				583074711FB3E86200E5F4AD /* libsqlite3.0.tbd in Frameworks */,
+				6FCB5DE61FCF30C800801F2F /* AWSGoogleSignIn.framework in Frameworks */,
+				6FCB5DC61FCF30C800801F2F /* AWSUserPoolsSignIn.framework in Frameworks */,
+				6FCB5DD01FCF30C800801F2F /* AWSElasticLoadBalancing.framework in Frameworks */,
+				6FCB5DC81FCF30C800801F2F /* AWSLogs.framework in Frameworks */,
+				6FCB5DC21FCF30C800801F2F /* AWSIoT.framework in Frameworks */,
+				6FCB5DBE1FCF30C800801F2F /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				6FCB5DEE1FCF30C800801F2F /* AWSSimpleDB.framework in Frameworks */,
+				6FCB5DE41FCF30C800801F2F /* AWSCognitoAuth.framework in Frameworks */,
+				6FCB5DBA1FCF30C800801F2F /* AWSAuthUI.framework in Frameworks */,
+				6FCB5DCC1FCF30C800801F2F /* AWSPolly.framework in Frameworks */,
+				6FCB5DF41FCF30C800801F2F /* AWSEC2.framework in Frameworks */,
+				6FCB5DEC1FCF30C800801F2F /* AWSMobileAnalytics.framework in Frameworks */,
+				6FCB5DDC1FCF30C800801F2F /* AWSAuthCore.framework in Frameworks */,
+				6FCB5DF01FCF30C800801F2F /* AWSFacebookSignIn.framework in Frameworks */,
+				6FCB5DE01FCF30C800801F2F /* AWSKinesis.framework in Frameworks */,
+				6FCB5DC01FCF30C800801F2F /* AWSSES.framework in Frameworks */,
+				6FCB5DD81FCF30C800801F2F /* AWSLambda.framework in Frameworks */,
+				583074721FB3E86500E5F4AD /* libsqlite3.tbd in Frameworks */,
+				583074731FB3E86700E5F4AD /* CoreGraphics.framework in Frameworks */,
+				6FCB5DDE1FCF30C800801F2F /* AWSCore.framework in Frameworks */,
+				6FCB5DD41FCF30C800801F2F /* AWSS3.framework in Frameworks */,
+				5830747D1FB4026300E5F4AD /* Foundation.framework in Frameworks */,
+				6FCB5DD61FCF30C800801F2F /* AWSRekognition.framework in Frameworks */,
+				6FCB5DCA1FCF30C800801F2F /* AWSDynamoDB.framework in Frameworks */,
+				6FCB5DF61FCF30C800801F2F /* AWSAPIGateway.framework in Frameworks */,
+				6FCB5DF21FCF30C800801F2F /* AWSSNS.framework in Frameworks */,
+				6FCB5DCE1FCF30C800801F2F /* AWSCognito.framework in Frameworks */,
+				6FCB5DC41FCF30C800801F2F /* AWSKMS.framework in Frameworks */,
+				6FCB5DEA1FCF30C800801F2F /* AWSMachineLearning.framework in Frameworks */,
+				6FCB5DE21FCF30C800801F2F /* AWSAutoScaling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830744D1FB3E77300E5F4AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583074581FB3E77300E5F4AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5830742C1FB3E77300E5F4AD = {
+			isa = PBXGroup;
+			children = (
+				583074371FB3E77300E5F4AD /* payride */,
+				583074531FB3E77300E5F4AD /* payrideTests */,
+				5830745E1FB3E77300E5F4AD /* payrideUITests */,
+				583074361FB3E77300E5F4AD /* Products */,
+				5830746D1FB3E79E00E5F4AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		583074361FB3E77300E5F4AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				583074351FB3E77300E5F4AD /* payride.app */,
+				583074501FB3E77300E5F4AD /* payrideTests.xctest */,
+				5830745B1FB3E77300E5F4AD /* payrideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		583074371FB3E77300E5F4AD /* payride */ = {
+			isa = PBXGroup;
+			children = (
+				6FF50D321FB7D57700635264 /* Images */,
+				6F132F3C1FB5681E0055CF27 /* View Controllers */,
+				583074381FB3E77300E5F4AD /* AppDelegate.h */,
+				583074391FB3E77300E5F4AD /* AppDelegate.m */,
+				5830743B1FB3E77300E5F4AD /* ViewController.h */,
+				5830743C1FB3E77300E5F4AD /* ViewController.m */,
+				5830743E1FB3E77300E5F4AD /* Main.storyboard */,
+				583074441FB3E77300E5F4AD /* Assets.xcassets */,
+				583074461FB3E77300E5F4AD /* LaunchScreen.storyboard */,
+				583074491FB3E77300E5F4AD /* Info.plist */,
+				5830744A1FB3E77300E5F4AD /* main.m */,
+				583074411FB3E77300E5F4AD /* payride.xcdatamodeld */,
+			);
+			path = payride;
+			sourceTree = "<group>";
+		};
+		583074531FB3E77300E5F4AD /* payrideTests */ = {
+			isa = PBXGroup;
+			children = (
+				583074541FB3E77300E5F4AD /* payrideTests.m */,
+				583074561FB3E77300E5F4AD /* Info.plist */,
+			);
+			path = payrideTests;
+			sourceTree = "<group>";
+		};
+		5830745E1FB3E77300E5F4AD /* payrideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5830745F1FB3E77300E5F4AD /* payrideUITests.m */,
+				583074611FB3E77300E5F4AD /* Info.plist */,
+			);
+			path = payrideUITests;
+			sourceTree = "<group>";
+		};
+		5830746D1FB3E79E00E5F4AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5883E6611FE0C63A00531FAC /* MapKit.framework */,
+				6FCB5DB91FCF30C700801F2F /* AWSAPIGateway.framework */,
+				6FCB5DAC1FCF30C300801F2F /* AWSAuthCore.framework */,
+				6FCB5D9B1FCF30BE00801F2F /* AWSAuthUI.framework */,
+				6FCB5DAF1FCF30C400801F2F /* AWSAutoScaling.framework */,
+				6FCB5DA71FCF30C100801F2F /* AWSCloudWatch.framework */,
+				6FCB5DA51FCF30C100801F2F /* AWSCognito.framework */,
+				6FCB5DB01FCF30C500801F2F /* AWSCognitoAuth.framework */,
+				6FCB5D9D1FCF30BF00801F2F /* AWSCognitoIdentityProvider.framework */,
+				6FCB5DAD1FCF30C400801F2F /* AWSCore.framework */,
+				6FCB5DA31FCF30C100801F2F /* AWSDynamoDB.framework */,
+				6FCB5DB81FCF30C700801F2F /* AWSEC2.framework */,
+				6FCB5DA61FCF30C100801F2F /* AWSElasticLoadBalancing.framework */,
+				6FCB5DB61FCF30C600801F2F /* AWSFacebookSignIn.framework */,
+				6FCB5DB11FCF30C500801F2F /* AWSGoogleSignIn.framework */,
+				6FCB5D9F1FCF30C000801F2F /* AWSIoT.framework */,
+				6FCB5DAE1FCF30C400801F2F /* AWSKinesis.framework */,
+				6FCB5DA01FCF30C000801F2F /* AWSKMS.framework */,
+				6FCB5DAA1FCF30C200801F2F /* AWSLambda.framework */,
+				6FCB5DB21FCF30C500801F2F /* AWSLex.framework */,
+				6FCB5DA21FCF30C000801F2F /* AWSLogs.framework */,
+				6FCB5DB31FCF30C600801F2F /* AWSMachineLearning.framework */,
+				6FCB5DB41FCF30C600801F2F /* AWSMobileAnalytics.framework */,
+				6FCB5D9C1FCF30BF00801F2F /* AWSPinpoint.framework */,
+				6FCB5DA41FCF30C100801F2F /* AWSPolly.framework */,
+				6FCB5DA91FCF30C200801F2F /* AWSRekognition.framework */,
+				6FCB5DA81FCF30C200801F2F /* AWSS3.framework */,
+				6FCB5D9E1FCF30BF00801F2F /* AWSSES.framework */,
+				6FCB5DB51FCF30C600801F2F /* AWSSimpleDB.framework */,
+				6FCB5DB71FCF30C600801F2F /* AWSSNS.framework */,
+				6FCB5DAB1FCF30C300801F2F /* AWSSQS.framework */,
+				6FCB5DA11FCF30C000801F2F /* AWSUserPoolsSignIn.framework */,
+				5830747C1FB4025700E5F4AD /* Foundation.framework */,
+				5830747A1FB4024900E5F4AD /* UIKit.framework */,
+				583074701FB3E80600E5F4AD /* libsqlite3.0.tbd */,
+				5830746F1FB3E80600E5F4AD /* libsqlite3.tbd */,
+				5830746E1FB3E79E00E5F4AD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F132F3C1FB5681E0055CF27 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				583074741FB3EB1E00E5F4AD /* DriverVC.h */,
+				583074751FB3EB1E00E5F4AD /* DriverVC.m */,
+				583074771FB3EB2F00E5F4AD /* PassengerVC.h */,
+				583074781FB3EB2F00E5F4AD /* PassengerVC.m */,
+				6F132F401FB568920055CF27 /* PassengerLoginVC.h */,
+				6F132F411FB568920055CF27 /* PassengerLoginVC.m */,
+				6FF50D2C1FB7CD6200635264 /* ViewDrivers.h */,
+				6FF50D2D1FB7CD6200635264 /* ViewDrivers.m */,
+				6FF50D2F1FB7CDA500635264 /* PassengerWelcome.h */,
+				6FF50D301FB7CDA500635264 /* PassengerWelcome.m */,
+				6FCB5DFA1FCF31AB00801F2F /* DrivertableDynamoDB.h */,
+				6FCB5DFB1FCF31AB00801F2F /* DrivertableDynamoDB.m */,
+				6F0A2E3F1FD906F500DCDE83 /* PassengertableDynamoDB.h */,
+				6F0A2E401FD906F500DCDE83 /* PassengertableDynamoDB.m */,
+				58BC1D891FDCEF1D00CA9A3D /* PThankYouViewController.h */,
+				58BC1D8A1FDCEF1D00CA9A3D /* PThankYouViewController.m */,
+				58EC5AFF1FDDEE360082C477 /* IncomingReqTableViewController.h */,
+				58EC5B001FDDEE360082C477 /* IncomingReqTableViewController.m */,
+				5883E6621FE0C9D500531FAC /* mapsViewController.h */,
+				5883E6631FE0C9D500531FAC /* mapsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6FF50D321FB7D57700635264 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5883E65F1FE0B28000531FAC /* car.jpg */,
+				585638231FDF206A0013C9AF /* Thankyou.jpg */,
+				6FF50D331FB7D5C700635264 /* icons8-car.png */,
+				6FF50D341FB7D5C700635264 /* icons8-customer.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		583074341FB3E77300E5F4AD /* payride */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 583074641FB3E77300E5F4AD /* Build configuration list for PBXNativeTarget "payride" */;
+			buildPhases = (
+				583074311FB3E77300E5F4AD /* Sources */,
+				583074321FB3E77300E5F4AD /* Frameworks */,
+				583074331FB3E77300E5F4AD /* Resources */,
+				6FCB5DF81FCF30C800801F2F /* Embed Frameworks */,
+				6FCB5DF91FCF310900801F2F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = payride;
+			productName = payride;
+			productReference = 583074351FB3E77300E5F4AD /* payride.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5830744F1FB3E77300E5F4AD /* payrideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 583074671FB3E77300E5F4AD /* Build configuration list for PBXNativeTarget "payrideTests" */;
+			buildPhases = (
+				5830744C1FB3E77300E5F4AD /* Sources */,
+				5830744D1FB3E77300E5F4AD /* Frameworks */,
+				5830744E1FB3E77300E5F4AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				583074521FB3E77300E5F4AD /* PBXTargetDependency */,
+			);
+			name = payrideTests;
+			productName = payrideTests;
+			productReference = 583074501FB3E77300E5F4AD /* payrideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5830745A1FB3E77300E5F4AD /* payrideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5830746A1FB3E77300E5F4AD /* Build configuration list for PBXNativeTarget "payrideUITests" */;
+			buildPhases = (
+				583074571FB3E77300E5F4AD /* Sources */,
+				583074581FB3E77300E5F4AD /* Frameworks */,
+				583074591FB3E77300E5F4AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5830745D1FB3E77300E5F4AD /* PBXTargetDependency */,
+			);
+			name = payrideUITests;
+			productName = payrideUITests;
+			productReference = 5830745B1FB3E77300E5F4AD /* payrideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5830742D1FB3E77300E5F4AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Kale, Abhijit Vijay";
+				TargetAttributes = {
+					583074341FB3E77300E5F4AD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					5830744F1FB3E77300E5F4AD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 583074341FB3E77300E5F4AD;
+					};
+					5830745A1FB3E77300E5F4AD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 583074341FB3E77300E5F4AD;
+					};
+				};
+			};
+			buildConfigurationList = 583074301FB3E77300E5F4AD /* Build configuration list for PBXProject "payride" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5830742C1FB3E77300E5F4AD;
+			productRefGroup = 583074361FB3E77300E5F4AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				583074341FB3E77300E5F4AD /* payride */,
+				5830744F1FB3E77300E5F4AD /* payrideTests */,
+				5830745A1FB3E77300E5F4AD /* payrideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		583074331FB3E77300E5F4AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5883E6601FE0B28000531FAC /* car.jpg in Resources */,
+				6FF50D361FB7D5C700635264 /* icons8-customer.png in Resources */,
+				6FF50D351FB7D5C700635264 /* icons8-car.png in Resources */,
+				583074481FB3E77300E5F4AD /* LaunchScreen.storyboard in Resources */,
+				583074451FB3E77300E5F4AD /* Assets.xcassets in Resources */,
+				585638241FDF206A0013C9AF /* Thankyou.jpg in Resources */,
+				583074401FB3E77300E5F4AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830744E1FB3E77300E5F4AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583074591FB3E77300E5F4AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FCB5DF91FCF310900801F2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		583074311FB3E77300E5F4AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF50D311FB7CDA500635264 /* PassengerWelcome.m in Sources */,
+				5830743D1FB3E77300E5F4AD /* ViewController.m in Sources */,
+				58BC1D8B1FDCEF1D00CA9A3D /* PThankYouViewController.m in Sources */,
+				5830743A1FB3E77300E5F4AD /* AppDelegate.m in Sources */,
+				6FF50D2E1FB7CD6200635264 /* ViewDrivers.m in Sources */,
+				6FCB5DFC1FCF31AB00801F2F /* DrivertableDynamoDB.m in Sources */,
+				5830744B1FB3E77300E5F4AD /* main.m in Sources */,
+				5883E6641FE0C9D500531FAC /* mapsViewController.m in Sources */,
+				583074791FB3EB2F00E5F4AD /* PassengerVC.m in Sources */,
+				583074431FB3E77300E5F4AD /* payride.xcdatamodeld in Sources */,
+				6F0A2E411FD906F500DCDE83 /* PassengertableDynamoDB.m in Sources */,
+				58EC5B011FDDEE360082C477 /* IncomingReqTableViewController.m in Sources */,
+				583074761FB3EB1E00E5F4AD /* DriverVC.m in Sources */,
+				6F132F421FB568920055CF27 /* PassengerLoginVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830744C1FB3E77300E5F4AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583074551FB3E77300E5F4AD /* payrideTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583074571FB3E77300E5F4AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583074601FB3E77300E5F4AD /* payrideUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		583074521FB3E77300E5F4AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 583074341FB3E77300E5F4AD /* payride */;
+			targetProxy = 583074511FB3E77300E5F4AD /* PBXContainerItemProxy */;
+		};
+		5830745D1FB3E77300E5F4AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 583074341FB3E77300E5F4AD /* payride */;
+			targetProxy = 5830745C1FB3E77300E5F4AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5830743E1FB3E77300E5F4AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5830743F1FB3E77300E5F4AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		583074461FB3E77300E5F4AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				583074471FB3E77300E5F4AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		583074621FB3E77300E5F4AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		583074631FB3E77300E5F4AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		583074651FB3E77300E5F4AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = payride/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uhcl.payride;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		583074661FB3E77300E5F4AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = payride/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uhcl.payride;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		583074681FB3E77300E5F4AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = payrideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uhcl.payrideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/payride.app/payride";
+			};
+			name = Debug;
+		};
+		583074691FB3E77300E5F4AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = payrideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uhcl.payrideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/payride.app/payride";
+			};
+			name = Release;
+		};
+		5830746B1FB3E77300E5F4AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = payrideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uhcl.payrideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = payride;
+			};
+			name = Debug;
+		};
+		5830746C1FB3E77300E5F4AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = payrideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uhcl.payrideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = payride;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		583074301FB3E77300E5F4AD /* Build configuration list for PBXProject "payride" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583074621FB3E77300E5F4AD /* Debug */,
+				583074631FB3E77300E5F4AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		583074641FB3E77300E5F4AD /* Build configuration list for PBXNativeTarget "payride" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583074651FB3E77300E5F4AD /* Debug */,
+				583074661FB3E77300E5F4AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		583074671FB3E77300E5F4AD /* Build configuration list for PBXNativeTarget "payrideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583074681FB3E77300E5F4AD /* Debug */,
+				583074691FB3E77300E5F4AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5830746A1FB3E77300E5F4AD /* Build configuration list for PBXNativeTarget "payrideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5830746B1FB3E77300E5F4AD /* Debug */,
+				5830746C1FB3E77300E5F4AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		583074411FB3E77300E5F4AD /* payride.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				583074421FB3E77300E5F4AD /* payride.xcdatamodel */,
+			);
+			currentVersion = 583074421FB3E77300E5F4AD /* payride.xcdatamodel */;
+			path = payride.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5830742D1FB3E77300E5F4AD /* Project object */;
+}
